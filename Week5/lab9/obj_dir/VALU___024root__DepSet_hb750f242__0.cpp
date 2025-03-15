@@ -175,14 +175,12 @@ VL_INLINE_OPT void VALU___024root___ico_sequent__TOP__0(VALU___024root* vlSelf) 
                                                   ^ (IData)(vlSelfRef.in_b)));
                 ALU__DOT__a_carry_out = (1U & (1U & 
                                                ((((IData)(vlSelfRef.in_a) 
-                                                  + 
-                                                  (0xffffU 
-                                                   & (~ (IData)(vlSelfRef.in_b)))) 
+                                                  - (IData)(vlSelfRef.in_b)) 
                                                  + (IData)(vlSelfRef.carry_in)) 
                                                 >> 0x10U)));
                 ALU__DOT__arithmetic_res = (0xffffU 
                                             & (((IData)(vlSelfRef.in_a) 
-                                                + (~ (IData)(vlSelfRef.in_b))) 
+                                                - (IData)(vlSelfRef.in_b)) 
                                                + (IData)(vlSelfRef.carry_in)));
             }
         } else if ((1U & (IData)(vlSelfRef.select))) {
